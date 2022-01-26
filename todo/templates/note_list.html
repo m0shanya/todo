@@ -1,0 +1,12 @@
+<!-- note_list.html -->
+{% extends "base.html" %}
+
+{% block title %}TEST BLOCK{% endblock %}
+
+{% block content %}
+    <h1>Hello, Alex</h1>
+    {% for note in notes %}
+        {% include "note.html" %}
+    {% endfor %}
+    {% include "add_note.html" %}
+{% endblock %}

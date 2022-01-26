@@ -1,0 +1,10 @@
+.venv/
+.idea/
+
+venv/
+
+__pycahe__/
+*.py[cod]
+*&py.class
+
+media/
