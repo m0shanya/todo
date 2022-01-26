@@ -14,7 +14,7 @@
     <div class="row">
       {% for note in notes %}
         <div class="col-4 note-item">
-          <div class="card">
+          <div class="note">
             {% if note.image %}
             <img src="{{ note.image.url }}" class="note-img-top" alt="{{ note.title }}">
             {% endif %}
