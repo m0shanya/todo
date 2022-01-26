@@ -16,11 +16,11 @@
         <div class="col-4 note-item">
           <div class="card">
             {% if note.image %}
-            <img src="{{ note.image.url }}" class="card-img-top" alt="{{ note.title }}">
+            <img src="{{ note.image.url }}" class="note-img-top" alt="{{ note.title }}">
             {% endif %}
-            <div class="card-body">
-              <h5 class="card-title">{{ note.title }}</h5>
-              <p class="card-text">{{ note.text }}</p>
+            <div class="note-body">
+              <h5 class="note-title">{{ note.title }}</h5>
+              <p class="note-text">{{ note.text }}</p>
             </div>
           </div>
         </div>
