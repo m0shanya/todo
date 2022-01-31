@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from notes.views import notes_index
+from notes.views import notes_index, user_login, logout_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', notes_index, name='index')
+    path('notes/', notes_index, name='index'),
+    path('', user_login, name='login'),
+    path('logout/', logout_view, name='logout'),
 ]
